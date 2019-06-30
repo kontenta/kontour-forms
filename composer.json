@@ -1,0 +1,38 @@
+{
+  "name": "kontenta/kontour-forms",
+  "description": "Blade templates for generating HTML forms",
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "5.7.*|5.8.*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.7|^3.8",
+    "squizlabs/php_codesniffer": "^3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kontenta\\KontourForms\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kontenta\\KontourForms\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kontenta\\KontourForms\\KontourFormsServiceProvider"
+      ],
+      "aliases": {}
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "report": "@test --coverage-html build/coverage --coverage-text=build/coverage.txt",
+    "phpcs": "vendor/bin/phpcs"
+  }
+}

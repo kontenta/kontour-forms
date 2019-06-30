@@ -1,0 +1,10 @@
+/vendor
+composer.lock
+*.swp
+*.swo
+.idea
+.DS_Store
+phpunit.xml
+.phpunit.result.cache
+/build
+phpcs.xml
